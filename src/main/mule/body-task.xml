@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="body-task-realtimeFlow" doc:id="a9ed0840-5ee3-4880-8e9d-e9c984011e9a" >
 <http:listener doc:name="Listener" doc:id="12f8f512-0d4e-458c-9902-ecad8babaf72" config-ref="HTTP_Listener_config" path="/body"/>
-<logger level="INFO" doc:name="Logger" doc:id="fe2af0a5-27bb-4a78-be47-e0bd2b2784c3" message="#[payload.orderName]"/>
+<logger level="INFO" doc:name="Logger" doc:id="fe2af0a5-27bb-4a78-be47-e0bd2b2784c3" message="#[payload]"/>
 </flow>
 </mule>
